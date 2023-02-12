@@ -1,0 +1,12 @@
+node_modules/
+public/
+.gitignore
+.prettierrc
+index.html
+LICENSE
+package.json
+README.md
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+yarn.lock
