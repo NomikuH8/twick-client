@@ -6,9 +6,13 @@ import "@fontsource/roboto/700.css"
 import { StrictMode } from "react"
 import App from "./App"
 import "./index.css"
+import { LocalizationProvider } from "@mui/x-date-pickers"
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
-    <App />
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <App />
+    </LocalizationProvider>
   </StrictMode>
 )

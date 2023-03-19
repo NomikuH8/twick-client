@@ -15,7 +15,11 @@ import { Outlet, useNavigate } from "react-router"
 import { useState } from "react"
 
 const DRAWER_WIDTH = 240
-const navItems = [{ name: "Home", link: "/" }]
+const navItems = [
+  { name: "Home", link: "/" },
+  { name: "Tweeter", link: "/tweeter" },
+  { name: "Recommendations", link: "/recommendations" },
+]
 
 export function ResponsiveLayout() {
   const [mobileOpen, setMobileOpen] = useState(false)
