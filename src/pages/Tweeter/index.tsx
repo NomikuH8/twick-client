@@ -133,6 +133,7 @@ export default function () {
         value={text}
         onChange={(e) => changeText(e.target.value)}
       />
+      <Typography variant="caption">Characters: {text.length}</Typography>
       <Grid
         spacing={2}
         container>
